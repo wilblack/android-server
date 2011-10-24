@@ -23,9 +23,9 @@ sys.path.append("/mnt/sdcard/sl4a/scripts/")
 import android
 import cherrypy
 
-from templates.home import html as home 
+from templates import home 
  
-cherrypy.config.update("/mnt/sdcard/sl4a/scripts/AndroidServer/site_config.txt") 
+#cherrypy.config.update("/mnt/sdcard/sl4a/scripts/AndroidServer/site_config.txt") 
 droid = android.Android()
  
 class Root(object):
@@ -39,7 +39,7 @@ class Root(object):
 
     @cherrypy.expose
     def take_pic(self):
-        rs = self.droid.cameraCapturePicture("/mnt/sdcard/DCMI/Webcam/")     
+        rs = self.droid.cameraCapturePicture("/mnt/sdcard/DCIM/Camera/Webcam/")     
         return str(rs)     
 
     @cherrypy.expose

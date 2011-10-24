@@ -5,7 +5,7 @@ Created on Oct 23, 2011
 '''
 
 
-html = """
+home = """
 <h1>Welcome to Wil's Android.</h1>
 <p>You can choose from the following actions.</p>
     <ul>
