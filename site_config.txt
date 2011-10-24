@@ -1,0 +1,3 @@
+[/images/cypress.jpg]
+tools.staticfile.on = True
+tools.staticfile.filename = "/mnt/sdcard/DCIM/Camera/cypress.jpg"
